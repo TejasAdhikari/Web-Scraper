@@ -114,10 +114,8 @@ while True:
                 print()
 
                 browser.get("http://soundcloud.com" + track_links[choice])
-                #elem = browser.find_elements_by_xpath("//*[@type='submit']")#put here the content you have put in Notepad, ie the XPath
                 button = browser.find_element_by_id('content')
                 button.click()
-                #print(elem.get_attribute("class"))
 
     #search for new and hot Charts
     if choice == 5:
@@ -171,11 +169,10 @@ while True:
                 print()
 
                 browser.get("http://soundcloud.com" + track_links[choice])
-                #elem = browser.find_elements_by_xpath("//*[@type='submit']")#put here the content you have put in Notepad, ie the XPath
                 button = browser.find_element_by_id('content')
                 button.click()
-                #print(elem.get_attribute("class"))
 
+                
 print()
 print("Good Bye!")
 print()
